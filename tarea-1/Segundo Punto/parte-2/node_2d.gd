@@ -14,11 +14,11 @@ func recolect(item: String, cant: int):
 	# Recolectar Item existente
 	if(items.has(item)):
 		items[item] =  items[item] + cant
-		print("Ahora tienes ", items[item], "Del elemento", item)
+		print("Ahora tienes ", items[item], " Del elemento ", item)
 	else:
 		items[item] = cant
 		print("Nuevo elemeto encontrado: ", item)
-		print("Cantidad en el inventario", cant)
+		print("Cantidad en el inventario: ", cant)
 		
 func useItems(item: String, cant: int):
 	if(items.has(item)):
